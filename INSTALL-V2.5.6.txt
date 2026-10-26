@@ -1,0 +1,23 @@
+KATTERUMS JAKTLAG v2.5.6 - KOMPLETT PAKET
+
+Bygger vidare direkt på fungerande v2.5.5.
+
+Nytt i v2.5.6:
+- Katterums huvudgräns synkas med Supabase-tabellen boundaries.
+- Om molnet saknar gräns migreras den befintliga lokala gränsen upp.
+- Om en huvudgräns finns i molnet används den på enheten.
+- Lokal gräns/cache finns kvar som fallback.
+- Befintlig login, pass, observationer och fällt vilt lämnas i övrigt orörda.
+
+Förutsättning i Supabase:
+- boundaries_read: SELECT för authenticated
+- boundaries_insert: INSERT för authenticated
+- boundaries_update: UPDATE för authenticated
+- RLS fortsatt aktiverat
+
+Installation:
+1. Ersätt alla filer i GitHub-repot med filerna i ZIP-paketet.
+2. Kontrollera att appen visar v2.5.6.
+3. Logga in som vanligt.
+4. Kontrollera Table Editor > boundaries. En huvudrad för Katterum ska skapas om tabellen tidigare var tom.
+5. Kontrollera därefter kartgränsen på telefon och dator.
